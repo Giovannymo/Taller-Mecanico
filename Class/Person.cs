@@ -3,20 +3,38 @@ namespace Taller_Mecanico.Class
     public abstract class Person
     {
         
-        public int Id;
-        public string Name;
-        public int NumberPhone;
+        public int id;
+        public string name;
+        public int numberPhone;
     
 
-        public Person (int id, string name, int numberPhone){
-            this.Id = id;
-            this.Name = name;
-            this.NumberPhone = numberPhone;
+        public Person(){
+
+        }
+        public Person (int _id, string _name, int _numberPhone){
+            this.id = _id;
+            this.name = _name;
+            this.numberPhone = _numberPhone;
         }
 
-        public abstract Person Add();
+        public int Id{
+            get{ return id; }
+            set{ id = value; }
+        }
+        public string Name{
+            get{ return Name; }
+            set{ Name = value; }
+        }
 
-        public void Remove(List<Person> Persons, int IdRemove){
+        public int NumberPhone{
+            get{ return numberPhone; }
+            set{ numberPhone = value; }
+        }
+
+
+        public abstract Person Add();
+        public abstract void  Remove();
+        /*public void Remove(List<Person> Persons, int IdRemove){
 
             foreach(Person person in Persons){
                 if(person.Id == IdRemove){
@@ -25,7 +43,7 @@ namespace Taller_Mecanico.Class
             }
 
 
-        }
+        }*/
 
     }
 }
