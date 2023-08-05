@@ -33,17 +33,8 @@ namespace Taller_Mecanico.Class
 
 
         public abstract Person Add();
-        public abstract void  Remove();
-        /*public void Remove(List<Person> Persons, int IdRemove){
+        public abstract void  Remove(List<Person> Persons);
 
-            foreach(Person person in Persons){
-                if(person.Id == IdRemove){
-                    Persons.Remove(person);
-                }
-            }
-
-
-        }*/
 
     }
 }
