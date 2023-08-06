@@ -43,6 +43,8 @@ namespace Taller_Mecanico.Class;
             int option = 0;
             do{         
                 try{
+                    Console.Clear();
+
                     Console.WriteLine("#### Agregando vehiculo ####");
                     Vehicle vehicle = new Vehicle();
                     Vehicle newVehicle = vehicle.AddVehicle();
