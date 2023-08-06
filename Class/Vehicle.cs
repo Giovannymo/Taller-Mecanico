@@ -74,7 +74,10 @@ namespace Taller_Mecanico.Class;
             return vehicle;
         }
 
-
+/// <summary>
+/// Removed a Object Vehicle 
+/// </summary>
+/// <param name="vehicles">List for vehicles</param>
         public void RemoveVehicle(List<Vehicle> vehicles){
             Console.WriteLine("Ingrese la placa del vehiculo a remover: ");
             string removePlate = Console.ReadLine();
