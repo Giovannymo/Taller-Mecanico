@@ -26,18 +26,52 @@ namespace Taller_Mecanico.Class;
             this.checkouts = new List<Checkout>();
         }
 
-        public override Customer Add(){
-            Console.WriteLine("Ingrese la cedula del cliente: ");
-            int id = int.Parse(Console.ReadLine());
-            Console.WriteLine("Ingrese el nombre del cliente: ");
-            string name = Console.ReadLine();
-            Console.WriteLine("Ingrese el apellido del cliente: ");
-            string lastName = Console.ReadLine();
-            Console.WriteLine("Ingrese el numero de telefono del cliente: ");
-            int numberPhone = int.Parse(Console.ReadLine());
-            Console.WriteLine("Ingrese el email del cliente: ");
-            string email =Console.ReadLine();
+        public string LastName{
+            get{return lastName;}
+            set{lastName = value;}
+        }
 
+        public string Email{
+            get{return email;}
+            set{email = value;}
+        }
+
+        public  DateTime CreatedAt{
+            get{return createdAt;}
+            set{createdAt = value;}
+        }
+        public List<Vehicle> Vehicles{
+            get{return vehicles;}
+            set{vehicles = value;}
+        }
+        public List<Order> Orders{
+            get{return orders;}
+            set{orders = value;}
+        }
+        public List<Checkout> Checkouts{
+            get{return checkouts;}  
+            set{checkouts = value;}
+        }
+
+
+
+        public override Customer Add(){
+            try{
+                Console.WriteLine("Ingrese la cedula del cliente: ");
+                int id = int.Parse(Console.ReadLine());
+                Console.WriteLine("Ingrese el nombre del cliente: ");
+                string  name = Console.ReadLine();
+                Console.WriteLine("Ingrese el apellido del cliente: ");
+                string lastName = Console.ReadLine();
+                Console.WriteLine("Ingrese el numero de telefono del cliente: ");
+                int numberPhone = int.Parse(Console.ReadLine());
+                Console.WriteLine("Ingrese el email del cliente: ");
+                string email =Console.ReadLine();
+
+            }catch(Exception e){
+                Console.WriteLine("Instruccion no valida, intentelo de nuevo. " + e.Message);
+            }
+            
             Customer customer = new Customer(id,name,numberPhone,lastName,email);
 
             int option = 0;
@@ -54,7 +88,7 @@ namespace Taller_Mecanico.Class;
                     option = int.Parse(Console.ReadLine());
 
                 }catch(Exception e){
-                    Console.WriteLine("Digite un valor valido");
+                    Console.WriteLine("Digite un valor valido. "+ e.Message);
                 }
             }while(option != 0);
             
