@@ -30,6 +30,8 @@ namespace Taller_Mecanico.Class
             int option = 0;
             do{         
                 try{
+                    Console.Clear();
+                    
                     Console.WriteLine("#### Agregando especialidades ####");
                     Console.WriteLine("Ingrese la especialidad del empleado: ");
                     string speciality = Console.ReadLine();
