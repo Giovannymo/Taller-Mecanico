@@ -2,18 +2,18 @@ namespace Taller_Mecanico.Class
 {
     public class Employee : Person
     {   
-        public string speciality;
+        public List<string> speciality;
 
-        public string Speaciality{
+        public List<string> Speaciality{
             get{ return speciality;}
             set{ speciality = value;}
         }
         public Employee(){
 
         }
-        public Employee(int _id, string _name, int _numberPhone, string _speciality) : base(_id, _name, _numberPhone)
+        public Employee(int _id, string _name, int _numberPhone) : base(_id, _name, _numberPhone)
         {
-            this.speciality = _speciality;
+            this.speciality = new List<string>();
         }
 
         public override Employee Add()
@@ -24,10 +24,26 @@ namespace Taller_Mecanico.Class
             string name = Console.ReadLine();
             Console.WriteLine("Ingrese el numero de telefono del empleado: ");
             int numberPhone = int.Parse(Console.ReadLine());
-            Console.WriteLine("Ingrese la especialidad del empleado: ");
-            string speciality = Console.ReadLine();
 
-            Employee employee = new Employee(id, name, numberPhone, speciality);
+            Employee employee = new Employee(id, name, numberPhone);
+
+            int option = 0;
+            do{         
+                try{
+                    Console.WriteLine("#### Agregando especialidades ####");
+                    Console.WriteLine("Ingrese la especialidad del empleado: ");
+                    string speciality = Console.ReadLine();
+                    employee.Speaciality.Add(speciality);
+                    Console.WriteLine("#### ¿Desea agregar otra especialidad? #### \n "+
+                                    "1. Si \n" + "2. No \n" + "0. Salir" );
+                    option = int.Parse(Console.ReadLine());
+
+                }catch(Exception e){
+                    Console.WriteLine("Digite un valor valido");
+                }
+
+            }while(option != 0);
+         
 
             return employee;
         }
