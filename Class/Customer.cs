@@ -37,8 +37,25 @@ namespace Taller_Mecanico.Class;
             int numberPhone = int.Parse(Console.ReadLine());
             Console.WriteLine("Ingrese el email del cliente: ");
             string email =Console.ReadLine();
-            
+
             Customer customer = new Customer(id,name,numberPhone,lastName,email);
+
+            int option = 0;
+            do{         
+                try{
+                    Console.WriteLine("#### Agregando vehiculo ####");
+                    Vehicle vehicle = new Vehicle();
+                    Vehicle newVehicle = vehicle.AddVehicle();
+                    this.vehicles.Add(newVehicle);
+                    Console.WriteLine("#### ¿Desea agregar otro vehiculo? #### \n "+
+                                    "1. Si \n" + "2. No \n" + "0. Salir" );
+                    option = int.Parse(Console.ReadLine());
+
+                }catch(Exception e){
+                    Console.WriteLine("Digite un valor valido");
+                }
+            }while(option != 0);
+            
     
         
             return customer;
