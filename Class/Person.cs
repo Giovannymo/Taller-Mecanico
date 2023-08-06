@@ -31,7 +31,10 @@ namespace Taller_Mecanico.Class
             set{ numberPhone = value; }
         }
 
-
+/// <summary>
+/// Created a new object person
+/// </summary>
+/// <returns>Object Person</returns>
         public abstract Person Add();
         public abstract void  Remove(List<Person> Persons);
 
