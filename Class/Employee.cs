@@ -18,12 +18,21 @@ namespace Taller_Mecanico.Class
 
         public override Employee Add()
         {
-            Console.WriteLine("Ingrese la cedula del empleado: ");
-            int id = int.Parse(Console.ReadLine());
-            Console.WriteLine("Ingrese el nombre del empleado: ");
-            string name = Console.ReadLine();
-            Console.WriteLine("Ingrese el numero de telefono del empleado: ");
-            int numberPhone = int.Parse(Console.ReadLine());
+            try
+            {
+                Console.WriteLine("Ingrese la cedula del empleado: ");
+                int id = int.Parse(Console.ReadLine());
+                Console.WriteLine("Ingrese el nombre del empleado: ");
+                string name = Console.ReadLine();
+                Console.WriteLine("Ingrese el numero de telefono del empleado: ");
+                int numberPhone = int.Parse(Console.ReadLine()); 
+            }
+            catch (Exception e)
+            {
+                
+                Console.WriteLine("Ingrese una opción valida, intentelo de nuevo. "+ e.Message);
+            }
+           
 
             Employee employee = new Employee(id, name, numberPhone);
 
@@ -41,7 +50,7 @@ namespace Taller_Mecanico.Class
                     option = int.Parse(Console.ReadLine());
 
                 }catch(Exception e){
-                    Console.WriteLine("Digite un valor valido");
+                    Console.WriteLine("Digite un valor valido" + e.Message);
                 }
 
             }while(option != 0);
