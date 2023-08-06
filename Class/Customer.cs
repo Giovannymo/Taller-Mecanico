@@ -74,7 +74,7 @@ namespace Taller_Mecanico.Class;
             
             Customer customer = new Customer(id,name,numberPhone,lastName,email);
 
-            int option = 0;
+            int option = 1;
             do{         
                 try{
                     Console.Clear();

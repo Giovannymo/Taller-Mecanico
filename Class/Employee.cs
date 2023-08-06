@@ -36,7 +36,7 @@ namespace Taller_Mecanico.Class
 
             Employee employee = new Employee(id, name, numberPhone);
 
-            int option = 0;
+            int option = 1;
             do{         
                 try{
                     Console.Clear();
