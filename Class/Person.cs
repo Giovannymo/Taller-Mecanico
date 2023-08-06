@@ -36,6 +36,11 @@ namespace Taller_Mecanico.Class
 /// </summary>
 /// <returns>Object Person</returns>
         public abstract Person Add();
+        
+/// <summary>
+/// Removed a object Person
+/// </summary>
+/// <param name="Persons">List of Persons</param>
         public abstract void  Remove(List<Person> Persons);
 
 
