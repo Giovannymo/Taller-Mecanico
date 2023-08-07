@@ -20,10 +20,9 @@ internal class Program
                     workshop.ShowCustomers();
 
                     break;
-                //Deleted and Update List Customer of Workshop
+                //Deleted and Update List Customers of Workshop
                 case 2:
-                    Customer customerRemove = new Customer();
-               
+                    Customer customerRemove = new Customer(); 
                     List<Person> newListCostumers = customerRemove.Remove(workshop.Customers);
                     workshop.Customers = newListCostumers;
                     workshop.ShowCustomers();
@@ -37,16 +36,42 @@ internal class Program
                     workshop.ShowEmployees();
 
                     break;
+                //Deleted and Update List Employees of Workshop
                 case 4:
                     Employee employeeRemove = new Employee();
                     List<Person> newListEmployees = employeeRemove.Remove(workshop.Employees);
                     workshop.Employees = newListEmployees;
                     workshop.ShowEmployees();
+
                     break;
-                case 10: 
+                case 5:
+                    try
+                    {
+                        Console.WriteLine("Ingrese la cedula del cliente para agregar un nuevo vehiculo: ");
+                        long idCustomer = long.Parse(Console.ReadLine());
+                        Person findCustomer = workshop.Customers.Find( customer => customer.Id == idCustomer );
+                        
+                        if(findCustomer != null){
+                            Vehicle vehicle = new Vehicle();
+                            Vehicle newVehicle = vehicle.AddVehicle();
+                            Customer customerVehicle = findCustomer as Customer;
+                            customerVehicle.Vehicles.Add(newVehicle);
+                        }
+
+                        
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine("Ocurrió una excepción, intentelo de nuevo." + e.Message);
+                    }
+                    workshop.ShowCustomers();
+                    Console.WriteLine("Agregado con éxito.\n\n");
+
+                    break;
+                case 9: 
                     workshop.ShowCustomers();
                     break;
-                case 11:
+                case 10:
                     workshop.ShowEmployees();
                     break;
                 case 0:
