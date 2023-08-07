@@ -1,5 +1,5 @@
-namespace Taller_Mecanico.Class
-{
+namespace Taller_Mecanico.Class;
+
     public abstract class Person
     {
         
@@ -22,8 +22,8 @@ namespace Taller_Mecanico.Class
             set{ id = value; }
         }
         public string Name{
-            get{ return Name; }
-            set{ Name = value; }
+            get{ return name; }
+            set{ name = value; }
         }
 
         public int NumberPhone{
@@ -45,4 +45,3 @@ namespace Taller_Mecanico.Class
 
 
     }
-}
