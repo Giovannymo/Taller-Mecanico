@@ -1,5 +1,5 @@
-namespace Taller_Mecanico.Class
-{
+namespace Taller_Mecanico.Class;
+
     public class Employee : Person
     {   
         public List<string> speciality;
@@ -26,19 +26,12 @@ namespace Taller_Mecanico.Class
                 string name = Console.ReadLine();
                 Console.WriteLine("Ingrese el numero de telefono del empleado: ");
                 int numberPhone = int.Parse(Console.ReadLine()); 
-            }
-            catch (Exception e)
-            {
+
+                Employee employee = new Employee(id, name, numberPhone);
+
+                int option = 1;
+                do{         
                 
-                Console.WriteLine("Ingrese una opción valida, intentelo de nuevo. "+ e.Message);
-            }
-           
-
-            Employee employee = new Employee(id, name, numberPhone);
-
-            int option = 1;
-            do{         
-                try{
                     Console.Clear();
                     
                     Console.WriteLine("#### Agregando especialidades ####");
@@ -48,15 +41,17 @@ namespace Taller_Mecanico.Class
                     Console.WriteLine("#### ¿Desea agregar otra especialidad? #### \n "+
                                     "1. Si \n" + "2. No \n" + "0. Salir" );
                     option = int.Parse(Console.ReadLine());
-
-                }catch(Exception e){
-                    Console.WriteLine("Digite un valor valido" + e.Message);
-                }
-
-            }while(option != 0);
+                }while(option != 0);
          
+                return employee;
+            }
+            catch (Exception e)
+            {
+                
+                throw new Exception("Ocurrio una excepcion" + e.Message);
+                return null;    
+            }
 
-            return employee;
         }
         public override void Remove(List<Person> Employees){
             Console.WriteLine("Ingrese la cedula del Empleado: ");
@@ -69,4 +64,3 @@ namespace Taller_Mecanico.Class
         }
 
     }
-}
