@@ -1,0 +1,15 @@
+C:\Users\gio\Documents\PROGRAMACION\Campus\C sharp\Taller-Mecanico\bin\Debug\net7.0\Taller-Mecanico.exe
+C:\Users\gio\Documents\PROGRAMACION\Campus\C sharp\Taller-Mecanico\bin\Debug\net7.0\Taller-Mecanico.deps.json
+C:\Users\gio\Documents\PROGRAMACION\Campus\C sharp\Taller-Mecanico\bin\Debug\net7.0\Taller-Mecanico.runtimeconfig.json
+C:\Users\gio\Documents\PROGRAMACION\Campus\C sharp\Taller-Mecanico\bin\Debug\net7.0\Taller-Mecanico.dll
+C:\Users\gio\Documents\PROGRAMACION\Campus\C sharp\Taller-Mecanico\bin\Debug\net7.0\Taller-Mecanico.pdb
+C:\Users\gio\Documents\PROGRAMACION\Campus\C sharp\Taller-Mecanico\obj\Debug\net7.0\Taller-Mecanico.csproj.AssemblyReference.cache
+C:\Users\gio\Documents\PROGRAMACION\Campus\C sharp\Taller-Mecanico\obj\Debug\net7.0\Taller-Mecanico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gio\Documents\PROGRAMACION\Campus\C sharp\Taller-Mecanico\obj\Debug\net7.0\Taller-Mecanico.AssemblyInfoInputs.cache
+C:\Users\gio\Documents\PROGRAMACION\Campus\C sharp\Taller-Mecanico\obj\Debug\net7.0\Taller-Mecanico.AssemblyInfo.cs
+C:\Users\gio\Documents\PROGRAMACION\Campus\C sharp\Taller-Mecanico\obj\Debug\net7.0\Taller-Mecanico.csproj.CoreCompileInputs.cache
+C:\Users\gio\Documents\PROGRAMACION\Campus\C sharp\Taller-Mecanico\obj\Debug\net7.0\Taller-Mecanico.dll
+C:\Users\gio\Documents\PROGRAMACION\Campus\C sharp\Taller-Mecanico\obj\Debug\net7.0\refint\Taller-Mecanico.dll
+C:\Users\gio\Documents\PROGRAMACION\Campus\C sharp\Taller-Mecanico\obj\Debug\net7.0\Taller-Mecanico.pdb
+C:\Users\gio\Documents\PROGRAMACION\Campus\C sharp\Taller-Mecanico\obj\Debug\net7.0\Taller-Mecanico.genruntimeconfig.cache
+C:\Users\gio\Documents\PROGRAMACION\Campus\C sharp\Taller-Mecanico\obj\Debug\net7.0\ref\Taller-Mecanico.dll
