@@ -19,13 +19,21 @@ internal class Program
                     workshop.Customers.Add(newCustomer);
                     workshop.ShowCustomers();
 
-                break;
+                    break;
+                case 2:
+                    Customer customerRemove = new Customer();
+               
+                    List<Person> newListCostumers = customerRemove.Remove(workshop.Customers);
+                    workshop.Customers = newListCostumers;
+                    workshop.ShowCustomers();
+
+                    break;
                 case 10: 
                     workshop.ShowCustomers();
-                break;
+                    break;
                 case 0:
                  Console.WriteLine("Apagando...");
-                break;
+                     break;
             }
 
 
