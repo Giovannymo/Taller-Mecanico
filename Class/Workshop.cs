@@ -5,8 +5,8 @@ public class Workshop
     public int id;
     public string name;
     public string owner;
-    public List<Customer> customers;
-    public List<Employee> employees;
+    public List<Person> customers;
+    public List<Person> employees;
 
     public Workshop()
     {
@@ -16,8 +16,8 @@ public class Workshop
         this.id = _id;
         this.name = _name;
         this.owner = _owner;
-        this.customers = new List<Customer>();
-        this.employees = new List<Employee>();
+        this.customers = new List<Person>();
+        this.employees = new List<Person>();
     }
 
     public int Id
@@ -35,12 +35,12 @@ public class Workshop
         get { return owner; }
         set { owner = value; }
     }
-    public List<Customer> Customers
+    public List<Person> Customers
     {
         get { return customers; }
         set { customers = value; }
     }
-    public List<Employee> Employees
+    public List<Person> Employees
     {
         get { return employees; }
         set { employees = value; }
