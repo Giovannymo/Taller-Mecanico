@@ -6,16 +6,15 @@ internal class Program
     private static void Main(string[] args)
     {   
         Workshop workshop = new Workshop(1,"Honda motors", "Mrs.Hundido");
-        int mainOption = 1;
+        bool next = true;
         do{
             MainMenu mainMenu = new MainMenu();
-            mainOption = mainMenu.Menu();
+            int mainOption = mainMenu.Menu();
 
             switch(mainOption){
                 case 1:
                     Customer customer = new Customer();
                     Customer newCustomer = customer.Add();
-                    Console.WriteLine(newCustomer.Name);
                     workshop.Customers.Add(newCustomer);
                     workshop.ShowCustomers();
 
@@ -28,16 +27,26 @@ internal class Program
                     workshop.ShowCustomers();
 
                     break;
+                case 3:
+                    Employee employee = new Employee();
+                    Employee newEmployee = employee.Add();
+                    workshop.Employees.Add(newEmployee);
+                    workshop.ShowEmployees();
+
+                    break;    
                 case 10: 
                     workshop.ShowCustomers();
                     break;
+                case 11:
+                    workshop.ShowEmployees();
+                    break;
                 case 0:
-                 Console.WriteLine("Apagando...");
-                     break;
+                    next = false;
+                    break;
             }
 
 
-        }while(mainOption != 0);
+        }while(next);
         
         
        
