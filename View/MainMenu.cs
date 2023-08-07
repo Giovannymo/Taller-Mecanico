@@ -6,7 +6,7 @@ namespace Taller_Mecanico.Class;
             int option =1;
 
             try{
-                Console.WriteLine("********** TALLER MECANICO **********");
+                Console.WriteLine("\n********** TALLER MECANICO **********");
                 Console.WriteLine("1. REGISTRAR CLIENTE. " + "\n"
                                 + "2. ELIMINAR CLIENTE."  + "\n"
                                 + "3. AGREGAR EMPLEADO."  + "\n"
