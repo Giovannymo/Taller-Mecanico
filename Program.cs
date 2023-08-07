@@ -44,6 +44,7 @@ internal class Program
                     workshop.ShowEmployees();
 
                     break;
+                //Add new Vehicle to Customer
                 case 5:
                     try
                     {
@@ -66,6 +67,13 @@ internal class Program
                     }
                     workshop.ShowCustomers();
                     Console.WriteLine("Agregado con éxito.\n\n");
+
+                    break;
+                //Deleted Vehicles to Customer
+                case 6:
+                    Vehicle removeVehicle = new Vehicle();
+                    removeVehicle.RemoveVehicle(workshop.Customers);
+                    Console.WriteLine("El auto se removió con éxito. \n");
 
                     break;
                 case 9: 
