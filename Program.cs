@@ -12,6 +12,7 @@ internal class Program
             int mainOption = mainMenu.Menu();
 
             switch(mainOption){
+                //Create and Add a new Customer
                 case 1:
                     Customer customer = new Customer();
                     Customer newCustomer = customer.Add();
@@ -19,6 +20,7 @@ internal class Program
                     workshop.ShowCustomers();
 
                     break;
+                //Deleted and Update List Customer of Workshop
                 case 2:
                     Customer customerRemove = new Customer();
                
@@ -27,13 +29,20 @@ internal class Program
                     workshop.ShowCustomers();
 
                     break;
+                //Create and Add a new Employee
                 case 3:
                     Employee employee = new Employee();
                     Employee newEmployee = employee.Add();
                     workshop.Employees.Add(newEmployee);
                     workshop.ShowEmployees();
 
-                    break;    
+                    break;
+                case 4:
+                    Employee employeeRemove = new Employee();
+                    List<Person> newListEmployees = employeeRemove.Remove(workshop.Employees);
+                    workshop.Employees = newListEmployees;
+                    workshop.ShowEmployees();
+                    break;
                 case 10: 
                     workshop.ShowCustomers();
                     break;
