@@ -41,7 +41,7 @@ namespace Taller_Mecanico.Class;
 /// Removed a object Person
 /// </summary>
 /// <param name="Persons">List of Persons</param>
-        public abstract void  Remove(List<Person> Persons);
+        public abstract List<Person>  Remove(List<Person> Persons);
 
 
     }
