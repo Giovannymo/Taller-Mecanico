@@ -11,7 +11,7 @@ namespace Taller_Mecanico.Class;
         public Employee(){
 
         }
-        public Employee(int _id, string _name, int _numberPhone) : base(_id, _name, _numberPhone)
+        public Employee(long _id, string _name, long _numberPhone) : base(_id, _name, _numberPhone)
         {
             this.speciality = new List<string>();
         }
@@ -21,11 +21,11 @@ namespace Taller_Mecanico.Class;
             try
             {
                 Console.WriteLine("Ingrese la cedula del empleado: ");
-                int id = int.Parse(Console.ReadLine());
+                long id = long.Parse(Console.ReadLine());
                 Console.WriteLine("Ingrese el nombre del empleado: ");
                 string name = Console.ReadLine();
                 Console.WriteLine("Ingrese el numero de telefono del empleado: ");
-                int numberPhone = int.Parse(Console.ReadLine()); 
+                long numberPhone = long.Parse(Console.ReadLine()); 
 
                 Employee employee = new Employee(id, name, numberPhone);
 
@@ -39,9 +39,9 @@ namespace Taller_Mecanico.Class;
                     string speciality = Console.ReadLine();
                     employee.Speaciality.Add(speciality);
                     Console.WriteLine("#### ¿Desea agregar otra especialidad? #### \n "+
-                                    "1. Si \n" + "2. No \n" + "0. Salir" );
+                                    "1. Si \n" + "2. No \n");
                     option = int.Parse(Console.ReadLine());
-                }while(option != 0);
+                }while(option != 2);
          
                 return employee;
             }
@@ -59,6 +59,7 @@ namespace Taller_Mecanico.Class;
              foreach(Employee employee in Employees){
                 if(employee.Id == IdRemove){
                     Employees.Remove(employee);
+                    break;
                 }
             }
             return Employees;

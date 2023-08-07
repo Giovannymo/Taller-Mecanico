@@ -52,13 +52,13 @@ public class Workshop
     /// 
     /// </summary>
     public void ShowEmployees()
-    {
+    {   Console.WriteLine($"Cedula: \t\t Nombre: \t\t Telefono \t\t Especialidades: ");
         foreach (Employee employee in employees)
         {
-            Console.WriteLine($"Cedula: \t\t Nombre: \t\t Telefono \t\t Especialidades: ");
-            Console.Write(employee.Id + "\t");
-            Console.Write(employee.Name + "\t");
-            Console.Write(employee.NumberPhone + "\t");
+            
+            Console.Write(employee.Id + "\t\t  ");
+            Console.Write(employee.Name + "\t\t");
+            Console.Write(employee.NumberPhone + "\t\t");
             foreach (string speciality in employee.Speaciality)
             {
                 Console.Write(speciality + ", ");
@@ -76,16 +76,16 @@ public class Workshop
         {
             Console.WriteLine($"Cedula:\t\t Nombre: \t\t Telefono:\t\t Email: \t\t Creado:");
             Console.Write(customer.Id + "\t\t");
-            Console.Write(customer.Name + "\t\t\t");
-            Console.Write(customer.NumberPhone + "\t\t");
-            Console.Write(customer.Email + "\t\t\t");
+            Console.Write(customer.Name + "\t\t");
+            Console.Write(customer.NumberPhone + "\t  ");
+            Console.Write(customer.Email + "\t\t ");
             Console.Write(customer.CreatedAt.ToString() + "\n\n");
             Console.WriteLine("Vehiculos del cliente: ");
             Console.WriteLine("Placa: \t Modelo: \t Marca: \t   Color: \t Kilometraje:");
             foreach (Vehicle vehicle in customer.Vehicles)
             {
                 Console.Write(vehicle.Plate + ",\t  ");
-                Console.Write(vehicle.Model + ",\t  ");
+                Console.Write(vehicle.Model + ",\t\t  ");
                 Console.Write(vehicle.Brand + ",\t  ");
                 Console.Write(vehicle.Color + ",\t  ");
                 Console.Write(vehicle.Km + ". \n\n");

@@ -17,7 +17,7 @@ public class Customer : Person
         this.checkouts = new List<Checkout>();
     }
 
-    public Customer(int _id, string _name, int _numberPhone, string _lastName, string _email) : base(_id, _name, _numberPhone)
+    public Customer(long _id, string _name, long _numberPhone, string _lastName, string _email) : base(_id, _name, _numberPhone)
     {
         this.lastName = _lastName;
         this.email = _email;
@@ -66,13 +66,13 @@ public class Customer : Person
     {
         try{
             Console.WriteLine("Ingrese la cedula del cliente: ");
-            int id = int.Parse(Console.ReadLine());
+            long id = long.Parse(Console.ReadLine());
             Console.WriteLine("Ingrese el nombre del cliente: ");
             string name = Console.ReadLine();
             Console.WriteLine("Ingrese el apellido del cliente: ");
             string lastName = Console.ReadLine();
             Console.WriteLine("Ingrese el numero de telefono del cliente: ");
-            int numberPhone = int.Parse(Console.ReadLine());
+            long numberPhone = long.Parse(Console.ReadLine());
             Console.WriteLine("Ingrese el email del cliente: ");
             string email = Console.ReadLine();
 

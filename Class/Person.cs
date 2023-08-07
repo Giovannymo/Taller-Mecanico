@@ -3,21 +3,21 @@ namespace Taller_Mecanico.Class;
     public abstract class Person
     {
         
-        public int id;
+        public long id;
         public string name;
-        public int numberPhone;
+        public long numberPhone;
     
 
         public Person(){
 
         }
-        public Person (int _id, string _name, int _numberPhone){
+        public Person (long _id, string _name, long _numberPhone){
             this.id = _id;
             this.name = _name;
             this.numberPhone = _numberPhone;
         }
 
-        public int Id{
+        public long Id{
             get{ return id; }
             set{ id = value; }
         }
@@ -26,7 +26,7 @@ namespace Taller_Mecanico.Class;
             set{ name = value; }
         }
 
-        public int NumberPhone{
+        public long NumberPhone{
             get{ return numberPhone; }
             set{ numberPhone = value; }
         }
