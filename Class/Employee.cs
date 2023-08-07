@@ -53,7 +53,7 @@ namespace Taller_Mecanico.Class;
             }
 
         }
-        public override void Remove(List<Person> Employees){
+        public override List<Person> Remove(List<Person> Employees){
             Console.WriteLine("Ingrese la cedula del Empleado: ");
             int IdRemove = int.Parse(Console.ReadLine());
              foreach(Employee employee in Employees){
@@ -61,6 +61,7 @@ namespace Taller_Mecanico.Class;
                     Employees.Remove(employee);
                 }
             }
+            return Employees;
         }
 
     }

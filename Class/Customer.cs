@@ -102,16 +102,20 @@ public class Customer : Person
             
     }
 
-    public override void Remove(List<Person> Customers)
+    public override List<Person> Remove(List<Person> Customers)
     {
         Console.WriteLine("Ingrese la cedula del Cliente: ");
         int IdRemove = int.Parse(Console.ReadLine());
-        foreach (Customer customer in Customers)
+        
+        foreach (Person customer in Customers)
         {
             if (customer.Id == IdRemove)
-            {
+            {  
                 Customers.Remove(customer);
+                break;
+                
             }
         }
+        return Customers;
     }
 }
