@@ -76,6 +76,11 @@ internal class Program
                     Console.WriteLine("El auto se removió con éxito. \n");
 
                     break;
+                //Generate Order Service                    
+                case 7:
+                       
+                    
+                    break;
                 case 9: 
                     workshop.ShowCustomers();
                     break;
