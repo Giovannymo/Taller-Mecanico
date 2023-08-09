@@ -4,20 +4,20 @@ namespace Taller_Mecanico.Class;
     {
         public int id;
         public DateTime createdAt {get;set;}
-        public long idCustomer;
-        public long idEmployee;
+        public Customer customer;
+        public Employee employee;
         public string plateVehicle;
         public bool state;
 
         public Order(){
             this.createdAt = DateTime.Now;
         }
-        public Order(long _idCustomer, long _idEmployee, string _plateVehicle){ 
+        public Order(Customer _customer, Employee _employee , string _plateVehicle){ 
             Random random = new Random();
             this.id = random.Next(0,100);
             this.createdAt = DateTime.Now;
-            this.idCustomer = _idCustomer;
-            this.idEmployee = _idEmployee;
+            this.customer = _customer;
+            this.employee = _employee;
             this.plateVehicle = _plateVehicle;
         }
 
@@ -25,9 +25,13 @@ namespace Taller_Mecanico.Class;
             get{return id;}
             set{id = value;}
         }
-        public long IdEmployee{
-            get{return idEmployee;}
-            set{idEmployee = value;}
+        public Customer Customer{
+            get{return customer;}
+            set{customer = value;}
+        }
+        public Employee Employee{
+            get{return employee;}
+            set{employee = value;}
         }
         public string PlateVehicle{
             get{return plateVehicle;}
