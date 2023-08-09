@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\gio\\Documents\\PROGRAMACION\\Campus\\C sharp\\Taller-Mecanico\\Taller-Mecanico.csproj": {}
+    "C:\\Users\\gio\\Documents\\PROGRAMACION\\Campus\\C sharp\\Taller-Mecanico\\Taller-Mecanico.csproj": {}
   },
   "projects": {
-    "c:\\Users\\gio\\Documents\\PROGRAMACION\\Campus\\C sharp\\Taller-Mecanico\\Taller-Mecanico.csproj": {
+    "C:\\Users\\gio\\Documents\\PROGRAMACION\\Campus\\C sharp\\Taller-Mecanico\\Taller-Mecanico.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\gio\\Documents\\PROGRAMACION\\Campus\\C sharp\\Taller-Mecanico\\Taller-Mecanico.csproj",
+        "projectUniqueName": "C:\\Users\\gio\\Documents\\PROGRAMACION\\Campus\\C sharp\\Taller-Mecanico\\Taller-Mecanico.csproj",
         "projectName": "Taller-Mecanico",
-        "projectPath": "c:\\Users\\gio\\Documents\\PROGRAMACION\\Campus\\C sharp\\Taller-Mecanico\\Taller-Mecanico.csproj",
+        "projectPath": "C:\\Users\\gio\\Documents\\PROGRAMACION\\Campus\\C sharp\\Taller-Mecanico\\Taller-Mecanico.csproj",
         "packagesPath": "C:\\Users\\gio\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\gio\\Documents\\PROGRAMACION\\Campus\\C sharp\\Taller-Mecanico\\obj\\",
+        "outputPath": "C:\\Users\\gio\\Documents\\PROGRAMACION\\Campus\\C sharp\\Taller-Mecanico\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gio\\AppData\\Roaming\\NuGet\\NuGet.Config",
