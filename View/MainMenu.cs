@@ -13,11 +13,13 @@ namespace Taller_Mecanico.Class;
                                 + "4. ELIMINAR EMPLEADO."  + "\n"
                                 + "5. REGISTRAR VEHICULO A CLIENTE EXISTENTE."  + "\n"
                                 + "6. ELIMINAR VEHICULO A CLIENTE EXISTENTE."  + "\n"
-                                + "7. GENERAR UNA ORDEN DE SERVICIO AL CLIENTE."  + "\n"
-                                + "8. AGREGAR UNA NUEVA ORDEN DE APROBACION ."  + "\n"
-                                + "9. MOSTRAR CLIENTES ."  + "\n"
-                                + "10. MOSTRAR EMPLEADOS ."  + "\n"
-                                + "11. ENTREGAR VEHICULO(S) Y FACTURA FINAL."  + "\n"
+                                + "7. AGREGAR UN NUEVO REPUESTO."  + "\n"
+                                + "8. GENERAR UNA ORDEN DE SERVICIO AL CLIENTE."  + "\n"
+                                + "9. AGREGAR UNA NUEVA ORDEN DE APROBACION ."  + "\n"
+                                + "10. MOSTRAR CLIENTES ."  + "\n"
+                                + "11. MOSTRAR EMPLEADOS ."  + "\n"
+                                + "12. MOSTRAR REPUESTOS ."  + "\n"
+                                + "13. ENTREGAR VEHICULO(S) Y FACTURA FINAL."  + "\n"
                                 + "0. SALIR."  + "\n");
                                 option= int.Parse(Console.ReadLine());
 
