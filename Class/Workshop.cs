@@ -7,6 +7,7 @@ public class Workshop
     public string owner;
     public List<Person> customers;
     public List<Person> employees;
+    public List<Spare> spares;
 
     public Workshop()
     {
@@ -18,6 +19,7 @@ public class Workshop
         this.owner = _owner;
         this.customers = new List<Person>();
         this.employees = new List<Person>();
+        this.spares = new List<Spare>();
     }
 
     public int Id
@@ -44,6 +46,10 @@ public class Workshop
     {
         get { return employees; }
         set { employees = value; }
+    }
+    public List<Spare> Spares{
+        get { return spares; }
+        set { spares = value; }
     }
 
 
@@ -90,6 +96,16 @@ public class Workshop
                 Console.Write(vehicle.Color + ",\t  ");
                 Console.Write(vehicle.Km + ". \n\n");
             }
+
+        }
+    }
+    public void ShowSpares(){
+            Console.WriteLine($"#ID:\t\t  Nombre: \t\t Valor unit:\t\t Cantidad: \t\t");
+        foreach (Spare spare in this.spares ){
+            Console.Write(spare.Id + "\t\t   ");
+            Console.Write(spare.Name + "\t\t\t");
+            Console.Write(spare.UnityValue + "\t\t  ");
+            Console.Write(spare.Quantity + "\t\t ");
 
         }
     }
