@@ -76,16 +76,20 @@ internal class Program
                     Console.WriteLine("El auto se removió con éxito. \n");
 
                     break;
-                //Generate Order Service                    
+                //Add new Spare to workshop                   
                 case 7:
-                       
-                    
+                    Spare spare = new();
+                    workshop.Spares.Add(spare.AddSpare());
+                    Console.WriteLine("El repuesto se agregó con éxito. \n");
                     break;
-                case 9: 
+                case 10: 
                     workshop.ShowCustomers();
                     break;
-                case 10:
+                case 11:
                     workshop.ShowEmployees();
+                    break;    
+                case 12:
+                    workshop.ShowSpares();
                     break;
                 case 0:
                     next = false;
