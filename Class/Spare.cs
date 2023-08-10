@@ -69,18 +69,8 @@ namespace Taller_Mecanico.Class;
 
     }
 
-  /*   public List<SpareOrder> RemoveSpare(List<SpareOrder> allSpare){
-        try{
-            Console.WriteLine("Ingrese el id del repuesto a eliminar");
-            
 
-
-
-        }catch(Exception e){
-            Console.WriteLine("Ha ocurrido una excepción, intentelo de nuevo. "+ e.Message);
-        }
-        return allSpare;
-    } */
+  
 
 
 }
